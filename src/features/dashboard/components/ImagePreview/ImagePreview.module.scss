@@ -1,0 +1,21 @@
+.imageContainer {
+    flex: 1;
+    padding: 1.5rem;
+    overflow: auto;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @media (max-width: 768px) {
+        padding: 1rem;
+        min-height: 250px;
+    }
+}
+
+.previewImage {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    display: block;
+}
